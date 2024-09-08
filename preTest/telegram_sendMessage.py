@@ -9,7 +9,7 @@ load_dotenv(dotenv_path=env_path)
 
 #텔레그램 챗봇 api키와, 나와 연결되어 있는 chatId
 token = os.getenv("TELEGRAM_API_KEY")
-chatId = 7146998483
+chatId = os.getenv("CHAT_ID")
 
 async def main():
     bot = telegram.Bot(token)
